@@ -40,6 +40,14 @@ function getRate() {
     *    usdRateDisplay.innerText = val;    *
     *
     *    *** Write code below here *** */
-
+    fetch(api)
+    .then(response => {
+        return response.json();
+    })
+    .then(data=> {
+        eurRateDisplay.innerText = data.bpi.EUR.rate;
+        usdRateDisplay.innerText = data.bpi.USD.rate;
+        gbpRateDisplay.innerText = data.bpi.GBP.rate;
+    });
     
 }

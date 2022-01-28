@@ -1,5 +1,6 @@
-# jfs-async
-A lesson on Callbacks, Promises, Async Await, Fetch
+# <a href="https://txlocnguyen.github.io/jfs-async/">jfs-async</a>
+A lesson on Callbacks, Promises, Async Await, Fetch. Display a website that shows the current BTC rate in USD, EUR, and GBP<br>
+Finished. Check it out <a href="https://txlocnguyen.github.io/jfs-async/">here</a>
 
 # Getting Started
 

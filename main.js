@@ -41,5 +41,26 @@ function getRate() {
     *
     *    *** Write code below here *** */
 
+    fetch('https://api.coindesk.com/v1/bpi/currentprice.json')
+    .then(response=>{
+        return response.json();
+    })
+    .then(data=>{
+    const eurRate =data.bpi.EUR.rate;
+    console.log(data);
+    console.log(eurRate);
+    eurRateDisplay.innerText = eurRate;
+   
+    const usDoll = data.bpi.USD.rate;
+    console.log(usDoll);
+    usdRateDisplay.innerText = usDoll
+
+    const gpbRate = data.bpi.GBP.rate;
+    console.log(gpbRate);
+    gbpRateDisplay.innerText = gpbRate
+    })
+    
     
 }
+
+// notes to self, dont forget to console.log data so you can see the object to be able to know how to define the variables such as the different rates.
